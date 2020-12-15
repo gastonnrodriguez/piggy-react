@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/piggy-react/static/css/main.a6b18fd6.chunk.css",
-    "main.js": "/piggy-react/static/js/main.97424f33.chunk.js",
-    "main.js.map": "/piggy-react/static/js/main.97424f33.chunk.js.map",
-    "runtime-main.js": "/piggy-react/static/js/runtime-main.9f113609.js",
-    "runtime-main.js.map": "/piggy-react/static/js/runtime-main.9f113609.js.map",
-    "static/css/2.78b63ee0.chunk.css": "/piggy-react/static/css/2.78b63ee0.chunk.css",
-    "static/js/2.18c403ec.chunk.js": "/piggy-react/static/js/2.18c403ec.chunk.js",
-    "static/js/2.18c403ec.chunk.js.map": "/piggy-react/static/js/2.18c403ec.chunk.js.map",
-    "static/js/3.ebc46dd5.chunk.js": "/piggy-react/static/js/3.ebc46dd5.chunk.js",
-    "static/js/3.ebc46dd5.chunk.js.map": "/piggy-react/static/js/3.ebc46dd5.chunk.js.map",
-    "index.html": "/piggy-react/index.html",
-    "static/css/2.78b63ee0.chunk.css.map": "/piggy-react/static/css/2.78b63ee0.chunk.css.map",
-    "static/css/main.a6b18fd6.chunk.css.map": "/piggy-react/static/css/main.a6b18fd6.chunk.css.map",
-    "static/js/2.18c403ec.chunk.js.LICENSE.txt": "/piggy-react/static/js/2.18c403ec.chunk.js.LICENSE.txt"
+    "main.css": "/gastonnrodriguez/piggy-react/static/css/main.a6b18fd6.chunk.css",
+    "main.js": "/gastonnrodriguez/piggy-react/static/js/main.97424f33.chunk.js",
+    "main.js.map": "/gastonnrodriguez/piggy-react/static/js/main.97424f33.chunk.js.map",
+    "runtime-main.js": "/gastonnrodriguez/piggy-react/static/js/runtime-main.49b16bda.js",
+    "runtime-main.js.map": "/gastonnrodriguez/piggy-react/static/js/runtime-main.49b16bda.js.map",
+    "static/css/2.78b63ee0.chunk.css": "/gastonnrodriguez/piggy-react/static/css/2.78b63ee0.chunk.css",
+    "static/js/2.8561dc6b.chunk.js": "/gastonnrodriguez/piggy-react/static/js/2.8561dc6b.chunk.js",
+    "static/js/2.8561dc6b.chunk.js.map": "/gastonnrodriguez/piggy-react/static/js/2.8561dc6b.chunk.js.map",
+    "static/js/3.ebc46dd5.chunk.js": "/gastonnrodriguez/piggy-react/static/js/3.ebc46dd5.chunk.js",
+    "static/js/3.ebc46dd5.chunk.js.map": "/gastonnrodriguez/piggy-react/static/js/3.ebc46dd5.chunk.js.map",
+    "index.html": "/gastonnrodriguez/piggy-react/index.html",
+    "static/css/2.78b63ee0.chunk.css.map": "/gastonnrodriguez/piggy-react/static/css/2.78b63ee0.chunk.css.map",
+    "static/css/main.a6b18fd6.chunk.css.map": "/gastonnrodriguez/piggy-react/static/css/main.a6b18fd6.chunk.css.map",
+    "static/js/2.8561dc6b.chunk.js.LICENSE.txt": "/gastonnrodriguez/piggy-react/static/js/2.8561dc6b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.9f113609.js",
+    "static/js/runtime-main.49b16bda.js",
     "static/css/2.78b63ee0.chunk.css",
-    "static/js/2.18c403ec.chunk.js",
+    "static/js/2.8561dc6b.chunk.js",
     "static/css/main.a6b18fd6.chunk.css",
     "static/js/main.97424f33.chunk.js"
   ]
