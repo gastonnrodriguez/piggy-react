@@ -1,65 +1,73 @@
 import "./table.css";
 import React, { useEffect, useState } from "react";
-import { Table, Tag, Space } from "antd";
+import { Table, Tag, Space, Popconfirm, message, Button } from "antd";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 
-const DataTable = (datos) => {
-const [transactions, setTransactions] = useState([]);
-const url = 'https://piggy-srv.herokuapp.com/api/v1/transactions';
+const DataTable = ({confirm, cancel, transactions, loading}) => {
+ 
+  const columns = [
+    {
+      title: "Etiqueta",
+      dataIndex: "type",
+      key: "type",
+      render: (type) => {
+        let color = type === "i" ? "green" : "red";
+        let tag = type === "i" ? "ingreso" : "egreso";
 
-useEffect(() => {
-    getTransactions();
-  }, []);
+        return (
+          <Tag color={color} key={tag}>
+            {tag.toUpperCase()}
+          </Tag>
+        );
+      },
+    },
+    {
+      title: "Fecha",
+      dataIndex: "createdAt",
+      key: "createdAt",
+    },
+    {
+      title: "Descripcion",
+      dataIndex: "description",
+      key: "description",
+    },
 
-const getTransactions = async () => {
-    const response = await fetch(url);
-    const data = await response.json();
-    setTransactions(data.data);
-    console.log(data);        
-  };
+    {
+      title: "Importe",
+      dataIndex: "amount",
+      key: "amount",
+    },
+    {
+      title: "Categoria",
+      key: "category",
+      dataIndex: "category",
+    },
+    {
+      title: "Accion",
+      key: "action",
+      render: (text, record) => (
+        <Space size="middle">
+          <Popconfirm
+            title="Estas seguro?"
+            onConfirm={()=>{confirm(record)}}
+            onCancel={cancel}
+            okText="Si"
+            cancelText="No"
 
-const columns = [
-  {
-    title: "Fecha",
-    dataIndex: "createdAt",
-    key: "createdAt",
-  },
-  {
-    title: "Descripcion",
-    dataIndex: "description",
-    key: "description",
-  },
-
-  {
-    title: "Importe",
-    dataIndex: "amount",
-    key: "amount",
-  },
-  {
-    title: "Categoria",
-    key: "category",
-    dataIndex: "category",
-  },
-  {
-    title: "Action",
-    key: "action",
-    render: (text, record) => (
-      <Space size="middle">
-        <a>
+          >
+            <Button type="link"><DeleteOutlined /></Button>
+          </Popconfirm>
+          <a>
           <EditOutlined />
-        </a>
-        <a>
-          <DeleteOutlined />
-        </a>
-      </Space>
-    ),
-  },
-];
-
+          </a>
+        </Space>
+      ),
+    },
+  ];
 
   return (
     <div>
-      <Table columns={columns} dataSource={transactions} title={() => 'Transacciones'} loading='TRUE' />
+      <Table columns={columns} dataSource={transactions} loading={loading} />
     </div>
   );
 };

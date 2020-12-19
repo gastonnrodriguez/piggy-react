@@ -1,0 +1,14 @@
+@import '~antd/dist/antd.css';
+
+
+#components-form-demo-normal-login  .incomeForm{
+    max-width: 300px;
+}
+
+.sendButton{
+    float: left;
+}
+
+.cancelButton{
+    float: right;
+}
