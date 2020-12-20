@@ -1,28 +1,84 @@
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Table, Tag, Space } from "antd";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 
 const Categories = (datos) => {
-const [transactions, setTransactions] = useState([]);
-const url = 'https://piggy-srv.herokuapp.com/api/v1/transactions';
 
-useEffect(() => {
-    getTransactions();
-  }, []);
-
-const getTransactions = async () => {
-    const response = await fetch(url);
-    const data = await response.json();
-    setTransactions(data.data);
-    console.log(data);        
-  };
+  const dataSource = [
+    {
+      type: 'i',
+      description: 'Sueldo',
+      
+    },
+    {
+      type: 'i',
+      description: 'Aguinaldo',
+      
+    },
+    {
+      type: 'i',
+      description: 'Bono',
+      
+    },
+    {
+      type: 'i',
+      description: 'Extra',
+      
+    },
+    {
+      type: 'e',
+      description: 'Supermercado',
+      
+    },
+    ,
+    {
+      type: 'e',
+      description: 'Gastos fijos',
+      
+    },
+    ,
+    {
+      type: 'e',
+      description: 'Alquiler',
+      
+    },
+    ,
+    {
+      type: 'e',
+      description: 'Auto',
+      
+    },
+    ,
+    {
+      type: 'e',
+      description: 'Tarjeta de credito',
+      
+    },
+    ,
+    {
+      type: 'e',
+      description: 'Otros',
+      
+    },
+    
+  ];
 
 const columns = [
   {
-    title: "Fecha",
-    dataIndex: "createdAt",
-    key: "createdAt",
+    title: "Etiqueta",
+    dataIndex: "type",
+    key: "type",
+    render: (type) => {
+      let color = type === "i" ? "green" : "red";
+      let tag = type === "i" ? "ingreso" : "egreso";
+
+      return (
+        <Tag color={color} key={tag}>
+          {tag.toUpperCase()}
+        </Tag>
+      );
+    },
   },
   {
     title: "Descripcion",
@@ -30,16 +86,6 @@ const columns = [
     key: "description",
   },
 
-  {
-    title: "Importe",
-    dataIndex: "amount",
-    key: "amount",
-  },
-  {
-    title: "Categoria",
-    key: "category",
-    dataIndex: "category",
-  },
   {
     title: "Action",
     key: "action",
@@ -59,7 +105,7 @@ const columns = [
 
   return (
     <div>
-      <Table columns={columns} dataSource={transactions} loading='TRUE' />
+      <Table columns={columns} dataSource={dataSource} loading='TRUE' />
     </div>
   );
 };

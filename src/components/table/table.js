@@ -3,8 +3,15 @@ import React, { useEffect, useState } from "react";
 import { Table, Tag, Space, Popconfirm, message, Button } from "antd";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 
-const DataTable = ({confirm, cancel, transactions, loading}) => {
- 
+const DataTable = ({
+  showUpdate,
+  confirm,
+  cancel,
+  handleOkUpdate,
+  handleCancelUpdate,
+  transactions,
+  loading,
+}) => {
   const columns = [
     {
       title: "Etiqueta",
@@ -49,17 +56,22 @@ const DataTable = ({confirm, cancel, transactions, loading}) => {
         <Space size="middle">
           <Popconfirm
             title="Estas seguro?"
-            onConfirm={()=>{confirm(record)}}
+            onConfirm={() => {
+              confirm(record);
+            }}
             onCancel={cancel}
             okText="Si"
             cancelText="No"
-
           >
-            <Button type="link"><DeleteOutlined /></Button>
+            <Button type="link">
+              <DeleteOutlined />
+            </Button>
           </Popconfirm>
-          <a>
-          <EditOutlined />
-          </a>
+          <Button type="link"  onClick={() => {
+              showUpdate(record);
+            }} >
+            <EditOutlined />
+          </Button>
         </Space>
       ),
     },

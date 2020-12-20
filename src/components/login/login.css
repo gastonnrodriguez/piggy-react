@@ -4,6 +4,8 @@
 
 .loginForm{
     padding-top: 15%;
+    background-color: rgb(240, 231, 231);
+    height: 100vh;
 }
 
 #components-form-demo-normal-login .login-form {

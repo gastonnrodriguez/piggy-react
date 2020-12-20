@@ -8,6 +8,8 @@ import {
     Link
    } from "react-router-dom";
 import "./login.css";
+import background from '../login/loginbg.svg';
+
 const Login = () => {
   return (
     <Row justify="center" className="loginForm" >

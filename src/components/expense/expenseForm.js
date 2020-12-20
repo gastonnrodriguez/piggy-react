@@ -1,4 +1,4 @@
-import { Form, Input, InputNumber, Button, Select } from "antd";
+import { Form, Input, InputNumber, Button, Select, DatePicker } from "antd";
 const layout = {
   labelCol: {
     span: 8,
@@ -14,8 +14,7 @@ const tailLayout = {
   },
 };
 
-const ExpenseForm = ({form}) => {
-  
+const ExpenseForm = ({ form }) => {
   return (
     <Form
       {...layout}
@@ -23,8 +22,29 @@ const ExpenseForm = ({form}) => {
       initialValues={{
         remember: true,
       }}
-       form = {form}
+      form={form}
     >
+      <Form.Item
+        label="Tipo"
+        name="type"
+        rules={[
+          {
+            required: true,
+            message: "Seleccione un tipo de entrada",
+          },
+        ]}
+      >
+        <Select>
+          <Select.Option value="i">Ingreso</Select.Option>
+          <Select.Option value="e">Gasto</Select.Option>
+        </Select>
+      </Form.Item>
+      <Form.Item
+      label="Fecha"
+      name="createdAt"
+      >
+          <DatePicker/>
+      </Form.Item>
       <Form.Item
         label="Descripcion"
         name="description"
@@ -67,7 +87,6 @@ const ExpenseForm = ({form}) => {
       >
         <InputNumber />
       </Form.Item>
-
     </Form>
   );
 };
