@@ -1,6 +1,6 @@
 import "./table.css";
-import React, { useEffect, useState } from "react";
-import { Table, Tag, Space, Popconfirm, message, Button } from "antd";
+import React from "react";
+import { Table, Tag, Space, Popconfirm, Button } from "antd";
 import { DeleteOutlined, EditOutlined } from "@ant-design/icons";
 
 const DataTable = ({

@@ -1,15 +1,9 @@
-import { Form, Input, InputNumber, Button, Select, DatePicker } from "antd";
+import { Form, Input, InputNumber, Select, DatePicker } from "antd";
 const layout = {
   labelCol: {
     span: 8,
   },
   wrapperCol: {
-    span: 16,
-  },
-};
-const tailLayout = {
-  wrapperCol: {
-    offset: 8,
     span: 16,
   },
 };

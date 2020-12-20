@@ -2,13 +2,10 @@ import React from "react";
 import { Row, Form, Input, Button, Checkbox } from "antd";
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import {
-    BrowserRouter,
-    Switch,
-    Route,
     Link
    } from "react-router-dom";
 import "./login.css";
-import background from '../login/loginbg.svg';
+//import background from '../login/loginbg.svg';
 
 const Login = () => {
   return (
@@ -55,7 +52,7 @@ const Login = () => {
             <Checkbox>Recordarme</Checkbox>
           </Form.Item>
 
-          <a className="login-form-forgot" href="">
+          <a className="login-form-forgot" href="#">
             Olvide mi password
           </a>
         </Form.Item>

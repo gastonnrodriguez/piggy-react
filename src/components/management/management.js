@@ -14,7 +14,7 @@ import Table from "../table/table";
 import UpdateForm from "../updateForm/updateForm";
 import Expenseform from "../expense/expenseForm";
 
-import MenuItem from "antd/lib/menu/MenuItem";
+//import MenuItem from "antd/lib/menu/MenuItem";
 
 const Management = () => {
   const [form] = Form.useForm();
@@ -153,9 +153,6 @@ const Management = () => {
   };
 
   const handleCancelUpdate = () => {};
-  const updateRecord = async (e) => {};
-
-  const cancelUpdate = (e) => {};
 
   return (
     <div>

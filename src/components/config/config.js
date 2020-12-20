@@ -1,12 +1,8 @@
 import React from 'react'
 import {
     Form,
-    Input,
     Button,
-    Radio,
     Select,
-    Cascader,
-    DatePicker,
     Switch,
   } from 'antd';
 const Config = () => {

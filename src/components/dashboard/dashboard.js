@@ -2,7 +2,6 @@ import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import { Layout, Menu, Row, Col } from "antd";
 import {
-  DashboardOutlined,
   TagsOutlined,
   SettingOutlined,
   BarChartOutlined,
@@ -16,7 +15,7 @@ import MenuItem from "antd/lib/menu/MenuItem";
 import Categories from "../categories/categories";
 import Reports from "../reports/reports";
 import Config from '../config/config'
-const { SubMenu } = Menu;
+//const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 
 const Dashboard = () => {
