@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/piggy-react/static/css/main.a6b18fd6.chunk.css",
-    "main.js": "/piggy-react/static/js/main.97424f33.chunk.js",
-    "main.js.map": "/piggy-react/static/js/main.97424f33.chunk.js.map",
-    "runtime-main.js": "/piggy-react/static/js/runtime-main.9f113609.js",
-    "runtime-main.js.map": "/piggy-react/static/js/runtime-main.9f113609.js.map",
+    "main.css": "/piggy-react/static/css/main.ebb3e038.chunk.css",
+    "main.js": "/piggy-react/static/js/main.8fecbce6.chunk.js",
+    "main.js.map": "/piggy-react/static/js/main.8fecbce6.chunk.js.map",
+    "runtime-main.js": "/piggy-react/static/js/runtime-main.852c5aec.js",
+    "runtime-main.js.map": "/piggy-react/static/js/runtime-main.852c5aec.js.map",
     "static/css/2.78b63ee0.chunk.css": "/piggy-react/static/css/2.78b63ee0.chunk.css",
-    "static/js/2.18c403ec.chunk.js": "/piggy-react/static/js/2.18c403ec.chunk.js",
-    "static/js/2.18c403ec.chunk.js.map": "/piggy-react/static/js/2.18c403ec.chunk.js.map",
-    "static/js/3.ebc46dd5.chunk.js": "/piggy-react/static/js/3.ebc46dd5.chunk.js",
-    "static/js/3.ebc46dd5.chunk.js.map": "/piggy-react/static/js/3.ebc46dd5.chunk.js.map",
+    "static/js/2.a2ecbd47.chunk.js": "/piggy-react/static/js/2.a2ecbd47.chunk.js",
+    "static/js/2.a2ecbd47.chunk.js.map": "/piggy-react/static/js/2.a2ecbd47.chunk.js.map",
+    "static/js/3.0477c909.chunk.js": "/piggy-react/static/js/3.0477c909.chunk.js",
+    "static/js/3.0477c909.chunk.js.map": "/piggy-react/static/js/3.0477c909.chunk.js.map",
     "index.html": "/piggy-react/index.html",
     "static/css/2.78b63ee0.chunk.css.map": "/piggy-react/static/css/2.78b63ee0.chunk.css.map",
-    "static/css/main.a6b18fd6.chunk.css.map": "/piggy-react/static/css/main.a6b18fd6.chunk.css.map",
-    "static/js/2.18c403ec.chunk.js.LICENSE.txt": "/piggy-react/static/js/2.18c403ec.chunk.js.LICENSE.txt"
+    "static/css/main.ebb3e038.chunk.css.map": "/piggy-react/static/css/main.ebb3e038.chunk.css.map",
+    "static/js/2.a2ecbd47.chunk.js.LICENSE.txt": "/piggy-react/static/js/2.a2ecbd47.chunk.js.LICENSE.txt",
+    "static/media/loginbg.fc90ec4d.svg": "/piggy-react/static/media/loginbg.fc90ec4d.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9f113609.js",
+    "static/js/runtime-main.852c5aec.js",
     "static/css/2.78b63ee0.chunk.css",
-    "static/js/2.18c403ec.chunk.js",
-    "static/css/main.a6b18fd6.chunk.css",
-    "static/js/main.97424f33.chunk.js"
+    "static/js/2.a2ecbd47.chunk.js",
+    "static/css/main.ebb3e038.chunk.css",
+    "static/js/main.8fecbce6.chunk.js"
   ]
 }
