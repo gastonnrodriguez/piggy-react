@@ -52,7 +52,7 @@ const Login = () => {
             <Checkbox>Recordarme</Checkbox>
           </Form.Item>
 
-          <a className="login-form-forgot" href="#">
+          <a className="login-form-forgot" href="/#">
             Olvide mi password
           </a>
         </Form.Item>

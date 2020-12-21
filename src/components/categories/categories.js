@@ -91,10 +91,10 @@ const columns = [
     key: "action",
     render: (text, record) => (
       <Space size="middle">
-        <a href='#'>
+        <a href='/#'>
           <EditOutlined />
         </a>
-        <a href='#'>
+        <a href='/#'>
           <DeleteOutlined />
         </a>
       </Space>
