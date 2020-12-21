@@ -3,6 +3,9 @@
   "name": "piggy-react",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "14.x"
+  },
   "dependencies": {
     "@ant-design/charts": "^1.0.12",
     "@antv/g2plot": "^2.3.2",
