@@ -31,31 +31,26 @@ const Categories = (datos) => {
       description: 'Supermercado',
       
     },
-    ,
     {
       type: 'e',
       description: 'Gastos fijos',
       
     },
-    ,
     {
       type: 'e',
       description: 'Alquiler',
       
     },
-    ,
     {
       type: 'e',
       description: 'Auto',
       
     },
-    ,
     {
       type: 'e',
       description: 'Tarjeta de credito',
       
     },
-    ,
     {
       type: 'e',
       description: 'Otros',
